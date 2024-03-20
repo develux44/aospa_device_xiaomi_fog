@@ -28,10 +28,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_layer_stitch=1 \
     vendor.display.enable_rounded_corner=0
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
 # Health
 TARGET_USE_HIDL_QTI_HEALTH := true
 
@@ -43,7 +39,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.disable_client_composition_cache=1 \
     vendor.display.enable_async_powermode=0  
-#    ro.hwui.render_ahead=20
+
 # API Level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -59,8 +55,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_idp_india.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.audio.policy.engine.odm=true \
-    ro.vendor.extension_library=libqti-perfd-client.so 
+    ro.vendor.audio.policy.engine.odm=true 
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1650
@@ -198,6 +193,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
     keymaster \
     media \
+    nfc \
     overlay \
     telephony \
     usb \
@@ -221,10 +217,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# SoC
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.model=SM6225
 
 # Storage.xml moment
 PRODUCT_SYSTEM_PROPERTIES += \
