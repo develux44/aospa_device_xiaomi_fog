@@ -14,7 +14,7 @@ The Redmi 10C (fog) is an entry level-smartphone from Redmi, Released 2022, Marc
 | SIM                     | Hybrid Dual SIM (Nano-SIM, dual stand-by)                   |
 | Storage                 | 64/128GB                                                    |
 | MicroSD                 | Up to 512 GB                                                |
-| Battery                 | Li-Po 5000 / 6000 mAh (non-removable), 33W quick charge     |
+| Battery                 | Li-Po 5000 / 6000 mAh (non-removable), 18W quick charge     |
 | Display                 | 720 x 1650 pixels (~268 ppi density)                        |
 | Fingerprint             | Side-mounted (FPC)                                          |
 ## Device picture
