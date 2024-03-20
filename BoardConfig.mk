@@ -63,7 +63,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 TARGET_OTA_ASSERT_DEVICE := fog,rain,wind
 
 # Screen density
-TARGET_SCREEN_DENSITY := 300
+TARGET_SCREEN_DENSITY := 320
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
@@ -80,6 +80,8 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 QC_WIFI_HIDL_FEATURE_DUAL_AP := true
+
+include device/qcom/common/BoardConfigQcom.mk
 
 # Inherit from the proprietary version
 include vendor/xiaomi/fog/BoardConfigVendor.mk
