@@ -289,3 +289,6 @@ $(call inherit-product, device/xiaomi/sm6225-common/common.mk)
 PRODUCT_SYSTEM_PROPERTIES += \
     zygote.critical_window.minute=10 \
     persist.device_config.runtime_native.usap_pool_enabled=true
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.log.tag.GRALLOC=S \
+    persist.log.tag.gralloc4=S

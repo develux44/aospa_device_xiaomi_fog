@@ -17,7 +17,7 @@ COMMON_PATH := device/qcom/common
 
 # A/B
 AB_OTA_UPDATER := true
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
+# BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 AB_OTA_PARTITIONS += \
@@ -92,6 +92,10 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/qcom/common/config.fs
+
+# Gralloc
+TARGET_USES_GRALLOC1 := true
+TARGET_USES_GRALLOC4 := true
 
 # Kernel
 BOARD_KERNEL_BASE        := 0x00000000
@@ -209,7 +213,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/xiaomi/sepolicy/SEPolicy.mk
-include device/xiaomi/fog/sepolicy/sm6225-common-sepolicy.mk
+# include device/xiaomi/fog/sepolicy/sm6225-common-sepolicy.mk
 
 # Treble flag
 BOARD_VNDK_VERSION := current
@@ -227,5 +231,5 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 BOARD_USES_QCOM_HARDWARE := true
 OVERRIDE_QCOM_HARDWARE_VARIANT := bengal
 
-include device/qcom/common/BoardConfigQcom.mk
+# include device/qcom/common/BoardConfigQcom.mk
 include vendor/xiaomi/fog/BoardConfigVendor.mk
