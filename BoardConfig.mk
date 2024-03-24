@@ -212,7 +212,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
-include device/xiaomi/sepolicy/SEPolicy.mk
+# include device/xiaomi/sepolicy/SEPolicy.mk
 # include device/xiaomi/fog/sepolicy/sm6225-common-sepolicy.mk
 
 # Treble flag
